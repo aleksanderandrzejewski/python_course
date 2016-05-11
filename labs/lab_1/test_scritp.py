@@ -66,6 +66,6 @@ from random import randint
 a=randint(1,9)
 print a
 a = input("Podaj liczbe:\n")
-print "Podales "+a
+print "Podales " + a
 
 
