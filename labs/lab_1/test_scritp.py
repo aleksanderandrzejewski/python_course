@@ -50,8 +50,15 @@ def zadanie3(listTuples):
 
 test(zadanie3, [(1, 3), (3, 3, 2), (2, 1)], [(2, 1), (3, 3, 2), (1, 3)])
 
-ef zadanie4(text):
-#    lista = [kod(s) for s in lista if warunek(s)]
-    te
+def zadanie4(text):
+#   lista = [kod(s) for s in lista if warunek(s)]
+    lista = text.split("ok")
+    wynikowalista=[]
+    for element in lista:
+        podstawienie=""
+        for indeks in range(0,element.find("$")):
+            podstawienie+=element[indeks]
+        wynikowalista.append(podstawienie)
+    return " ".join(wynikowalista).strip()
 
 test(zadanie4, "okmy$aiaetiaigaafbaf??a$okwatch$oafbusd$okhas$asbrsi31480$okended$aq340af", [109, 121, 32, 119, 97, 116, 99, 104, 32, 104, 97, 115, 32, 101, 110, 100, 101, 100])
