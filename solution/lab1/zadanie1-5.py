@@ -25,21 +25,17 @@ test(zadanie1, [1, 2, 3, 3, 5, 68, 68, 24], [1, 2, 3, 5, 68, 24])
 
 
 def zadanie2(list1, list2):
-    smallSize = min(len(list1), len(list2))
-    if len(list1) > len(list2):
-        big = list1
-    else:
-        big = list2
-
-    newList = list()
-    for l,r in zip(list1[:smallSize], list2[:smallSize]):
-        newList.append(l)
-        newList.append(r)
-
-    for e in big[smallSize:]:
-        newList.append(e)
-
-    return newList
+    listwynik=[]
+    for i in range(len( list1 )+len( list2 )):
+        try:
+            listwynik.append(list1[i])
+        except IndexError:
+            pass
+        try:
+            listwynik.append(list2[i])
+        except IndexError:
+            pass
+    return listwynik
 
 test(zadanie2, [1, 2, 19, 'dd', ':P', ":("], [12,'c','5'], [1, 12, 2, 'c', 19, '5', 'dd', ':P', ':('])
 
