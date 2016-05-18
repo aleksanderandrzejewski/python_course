@@ -24,9 +24,11 @@ def rhs(Y0, t): # funkcja prawych stron
     x1=Y[2:4]
     u1=y[]
 
-    r=x1-x20
+    r=x1-x2
 
     dYdt[5]=-r*k/2*(1.-;0/dlr)
+
+
     dYdt[1]
     dYdt[6:]=u2
 

@@ -60,12 +60,16 @@ test(zadanie4, "okmy$aiaetiaigaafbaf??a$okwatch$oafbusd$okhas$asbrsi31480$okende
 
 
 
+#zadanie 5
 
 from random import randint
 
 a=randint(1,9)
 print a
-a = input("Podaj liczbe:\n")
-print "Podales " + a
+b = input("Podaj liczbe:\n")
+print "Podales", a
 
-
+while a != b:
+    b = input("Zle. Podaj inna liczbe:\n")
+    print "Podales", a
+print "Dobrze!", a , 'to prawidlowa liczba'
