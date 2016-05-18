@@ -1,3 +1,5 @@
+#zadanie 1
+
 def test(fun, *args):
     print "".join(['-' for i in range(40)])
     print fun.__name__[:-1].upper()+" "+fun.__name__[-1]
@@ -12,7 +14,7 @@ def test(fun, *args):
         print "Is correct? " + str(res == args[-1])
     print "".join(['-' for i in range(40)])
 
-#zadanie 1
+
 def zadanie1(listObject):
     wynik=[]
     poprzedni=""
@@ -25,24 +27,12 @@ def zadanie1(listObject):
 print zadanie1([1, 2, 3, 3, 5, 68, 68, 24])
 test(zadanie1, [1, 2, 3, 3, 5, 68, 68, 24], [1, 2, 3, 5, 68, 24])
 
-#zadanie2
 def zadanie2(list1, list2):
-    listwynik=[]
-    for i in range(len( list1 )+len( list2 )):
-        try:
-            listwynik.append(list1[i])
-        except IndexError:
-            pass
-        try:
-            listwynik.append(list2[i])
-        except IndexError:
-            pass
-    return listwynik
+    # type your code
+    pass
+#test(zadanie2, [1, 2, 19, 'dd', ':P', ":("], [12,'c','5'], [1, 12, 2, 'c', 19, '5', 1, 2, 19, 'dd', ':P', ':('])
+#???
 
-test(zadanie2, [1, 2, 19, 'dd', ':P', ":("], [12,'c','5'], [1, 12, 2, 'c', 19, '5', 'dd', ':P', ':('])
-
-
-#zadanie3
 def zadanie3(listtuples):
     lista3 = [list(element) for element in listtuples]
     for element3 in lista3:
@@ -55,7 +45,6 @@ def zadanie3(listtuples):
 
 test(zadanie3, [(1, 3), (3, 3, 2), (2, 1)], [(2, 1), (3, 3, 2), (1, 3)])
 
-#zadanie4
 def zadanie4(text):
 #   lista = [kod(s) for s in lista if warunek(s)]
     lista = text.split( "ok" )
@@ -72,11 +61,14 @@ test(zadanie4, "okmy$aiaetiaigaafbaf??a$okwatch$oafbusd$okhas$asbrsi31480$okende
 
 
 #zadanie 5
+
 from random import randint
+
 a=randint(1,9)
 print a
 b = input("Podaj liczbe:\n")
 print "Podales", a
+
 while a != b:
     b = input("Zle. Podaj inna liczbe:\n")
     print "Podales", a
